@@ -1,0 +1,14 @@
+---
+- name: Generating hosts file for computers
+  hosts: pve25
+
+  tasks:
+    - name: Copy template for hosts file
+      ansible.builtin.template:
+        src: templates/hosts.j2
+        dest: /etc/hosts
+
+    - name: Restarted pveproxy daemon
+      ansible.builtin.systemd:
+        name: pveproxy
+        state: restarted

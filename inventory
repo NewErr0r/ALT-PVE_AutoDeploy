@@ -1,0 +1,23 @@
+all:
+  children:
+    pve25:
+      hosts:
+        pve25-pc1.college.local:
+        pve25-pc2.college.local:
+        pve25-pc3.college.local:
+        pve25-pc4.college.local:
+        pve25-pc5.college.local:
+        pve25-pc6.college.local:
+        pve25-pc7.college.local:
+        pve25-pc8.college.local:
+        pve25-pc9.college.local:
+#        pve25-pc10.college.local:
+        pve25-pc12.college.local:
+        pve25-pc13.college.local:
+        pve25-pc14.college.local:
+        pve25-pc15.college.local:
+        pve25-pc16.college.local:
+        pve25-pc17.college.local:
+        pve25-pc18.college.local:
+        pve25-pc19.college.local:
+        

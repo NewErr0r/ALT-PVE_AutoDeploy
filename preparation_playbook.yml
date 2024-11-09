@@ -1,0 +1,14 @@
+---
+- name: Deploy preparation PVE for computers
+  hosts: pve25
+
+  tasks:
+    - name: Running a script to create templates for VMs
+      ansible.builtin.script: files/01_create_vms_for_templates.sh
+
+    - name: Running a script to create network Bridges
+      ansible.builtin.script: files/02_create_network_bridge.sh
+
+    - name: Running a script to create users pools and roles
+      ansible.builtin.script: files/03_create_pools_and_user__for_roles.sh
+        
