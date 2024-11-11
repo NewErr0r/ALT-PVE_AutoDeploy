@@ -1,0 +1,14 @@
+---
+- name: Deploy topologies for PC on 32 GB RAM
+  hosts: pve25_ram32
+
+  tasks:
+    - name: Deploy topologies for working NAT for 'student1' and 'student2'
+      ansible.builtin.script: topologies/NAT/nat_topologies_ram32_created.sh
+
+- name: Deploy topologies for PC on 16 GB RAM
+  hosts: pve25_ram16
+
+  tasks:
+    - name: Deploy topologies for working NAT for 'student1'
+      ansible.builtin.script: topologies/NAT/nat_topologies_ram16_created.sh
