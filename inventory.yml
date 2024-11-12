@@ -3,7 +3,7 @@ all:
     pve25:
       hosts:
         pve25-pc1.college.local:
-        pve25-pc2.college.local:
+#        pve25-pc2.college.local:
         pve25-pc3.college.local:
         pve25-pc4.college.local:
         pve25-pc5.college.local:
@@ -35,7 +35,7 @@ all:
     pve25_ram16:
       hosts:
         pve25-pc1.college.local:
-        pve25-pc2.college.local:
+#        pve25-pc2.college.local:
         pve25-pc3.college.local:
         pve25-pc4.college.local:
         pve25-pc5.college.local:

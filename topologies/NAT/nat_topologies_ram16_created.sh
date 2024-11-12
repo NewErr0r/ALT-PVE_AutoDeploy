@@ -29,9 +29,9 @@ qm clone $ECOROUTER 102 \
     --storage "local"
 
 qm set 102 \
-    --net0 virtio,bridge=vmbr0,link_down=1 \
-    --net1 virtio,bridge=vmbr101 \
-    --net2 virtio,bridge=vmbr102
+    --net0 vmxnet3,bridge=vmbr0,link_down=1 \
+    --net1 vmxnet3,bridge=vmbr101 \
+    --net2 vmxnet3,bridge=vmbr102
 
 # SRV
 qm clone $ALT_SERVER 103 \
